@@ -1,0 +1,46 @@
+*{
+	margin:0; 
+	padding:0;
+}
+.atas{
+    margin-top: 5%;
+}
+.leftside, .rightside{
+    height: 50vh;
+    width: 100%;
+}
+@media screen and (min-width:768px){
+    .leftside,.rightside{
+        height: 100vh;
+    }
+}
+.h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+.leftside{
+    background: url(../images/bg1.jpg) no-repeat center center ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.rightside{
+    background:white;
+}
+
+
+   .login {
+    margin-top: 0%;
+    
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .bgg{
+      background: rgb(230, 227, 227);
+      color:rgb(94, 93, 93);
+  }
+
+ 
