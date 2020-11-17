@@ -9,7 +9,7 @@ include "library/function_date.php";
 if( empty($_SESSION['nis']) or empty($_SESSION['password']) ){
    header('location: login.php');
 }
-?>
+?> 
 
 <html>
 <head>
@@ -28,7 +28,7 @@ if( empty($_SESSION['nis']) or empty($_SESSION['password']) ){
    <script type="text/javascript" src="js/main.js"></script>
  
 <body>
-<nav class="navbar "> 
+<nav class="navbar ">  
    <div class="container-fluid">
       <div class="row">
 			<div class="col-md-9 judul">
@@ -69,7 +69,7 @@ if($kosong){
    </div>
 </section>
 
-<footer> 
+<footer > 
    <div class="container">
       <p class="text-center">Copyright &copy; rizaru.2.2@gmail.com</p>
    </div>

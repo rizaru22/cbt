@@ -9,7 +9,7 @@ body{
 	height: 100px;
 	border-radius: 0;
 	background: #235f9a;
-	border-bottom: 4px solid #999;
+	border-bottom: 4px solid #999; 
 }
 .navbar .judul{
 	padding: 10px;
@@ -350,3 +350,35 @@ input[type=radio]:checked ~ .huruf-pilihan{
 	border: 1px solid #888;
 	padding: 10px;
 }
+
+
+@media screen and(max-width:1000px){
+	footer{
+		display: none !important;
+		visibility: hidden;
+	}
+
+	.meta{
+		display: none !important;
+		visibility: hidden;
+	}
+}
+
+@media screen and (max-width: 600px){
+	footer{
+		display: none ;
+		visibility: hidden;
+	}
+	.meta{
+		display: none !important;
+		visibility: hidden;
+	}
+
+}
+/* 
+@media screen and(min-width:800px){
+	footer{
+		display: none !important;
+		visibility: hidden;
+	}
+} */

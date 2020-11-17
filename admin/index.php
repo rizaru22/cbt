@@ -67,11 +67,13 @@ if(empty($_SESSION['username']) or empty($_SESSION['password']) or $_SESSION['lo
 	</div>
 </section>
 <footer></footer>
+
 <script type="text/javascript" src="../assets/jquery/jquery-2.0.2.min.js"></script>
 <script type="text/javascript" src="../assets/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../assets/dataTables/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="../assets/dataTables/js/dataTables.bootstrap.min.js"></script>
 <script type="text/javascript" src="script/menu.js"></script>
+<!-- <script type="text/javascript" src="../js/admin.js"></script> -->
 <script type="text/javascript">
 $(document).ready(function(e) {
    $('.has-sub').click(function(){

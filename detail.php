@@ -49,7 +49,7 @@ $ujian = mysqli_fetch_array(mysqli_query($mysqli, "SELECT * FROM ujian WHERE id_
     </div>
     <div class="list-group-item">
         <div class="row">
-            <div class="col-xs-push-9 col-xs-3"><br>
+            <div class="col-xs-9 col-md-3 "><br>
 			
 <?php	
 //Jika nilai sudah ada tampilkan tombol Sudah Mengerjakan, jika belum ada tampilkan tombol Masuk Ujian

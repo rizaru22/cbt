@@ -14,7 +14,7 @@ while($r = mysqli_fetch_array($query)){
 
 //Membuat tombol kelas untuk melihat nilai	
    $qkelas = mysqli_query($mysqli, "SELECT * FROM kelas t1, kelas_ujian t2 WHERE t1.id_kelas=t2.id_kelas AND t2.id_ujian='$r[id_ujian]'");
-   $label = "";
+   $label = ""; 
    while($rk = mysqli_fetch_array($qkelas)){
       $jml = mysqli_num_rows(mysqli_query($mysqli, "SELECT * FROM nilai t1, siswa t2 WHERE t1.id_ujian='$rk[id_ujian]' AND t1.nis=t2.nis AND t2.id_kelas='$rk[id_kelas]'"));
       $label .= '<a class="btn btn-xs btn-info" style="margin-bottom: 5px" onclick="show_nilai('.$rk['id_kelas'].','.$rk['id_ujian'].')">'.$rk['kelas'].' &nbsp;&nbsp; <span class="label label-warning">'.$jml.'</span></a> ';

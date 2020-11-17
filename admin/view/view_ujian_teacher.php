@@ -15,6 +15,6 @@ echo '<hr/><div class="alert alert-info"><ul>
 <li>Klik tombol edit pada kolom Bank Soal untuk mengatur soal!</li>
 <li>Klik nama kelas pada kolom Kelas Ujian untuk melihat nilai pada kelas tersebut!</li>
 </ul></div>';
-
+ 
 create_table(array("Judul Ujian", "Nama Mapel", "Tanggal", "Jml. Soal", "Bank Soal", "Kelas Ujian"));
 ?>
