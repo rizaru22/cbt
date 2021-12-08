@@ -1,7 +1,7 @@
 <?php
 if(empty($_SESSION['nis']) or empty($_SESSION['password']) ){
    header('location: login.php');
-}
+} 
 
 $row=mysqli_fetch_assoc(mysqli_query($mysqli, "SELECT token FROM token "));
 $tokendb=$row['token'];
@@ -38,7 +38,7 @@ $ujian = mysqli_fetch_array(mysqli_query($mysqli, "SELECT * FROM ujian WHERE id_
 
     <div class="list-group-item">
         <label class="list-group-item-heading">Mata Pelajaran </label>
-        <p class="list-group-item-text"><?= $ujian['nama_mapel']; ?></p>
+        <p class="list-group-item-text"><?= $ujian['judul']; ?></p>
     </div>
                 
 	<div class="list-group-item">

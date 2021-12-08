@@ -142,8 +142,9 @@ echo '<table>
 						<th>No</th>
 						<th>Username</th>
 						<th>Nama Peserta</th>
-						<th width="100">Jumlah Benar</th>
+						<th>Jumlah Benar</th>
 						<th bgcolor="#cccdce">Nilai</th>
+						<th bgcolor="#f76a6a">Sisa Waktu</th>
 					</tr>
 				</thead>
 				<tbody>';?>
@@ -158,6 +159,7 @@ $query3 = mysqli_query($mysqli, "SELECT * FROM siswa WHERE id_kelas='$_GET[kelas
 						<td>&nbsp;'. $r3['nama'].'</td>
 						<td align="center">'.$n['jml_benar'].'</td>
 						<td align="center" bgcolor="#cccdce"><b>'.$n['nilai'].'</b></td>
+						<td align="center" bgcolor="#f76a6a"><b>'.$n['sisa_waktu'].'</b></td>
 					</tr>'; $no++;
 				}?>
 				<?php echo '</tbody>

@@ -8,6 +8,11 @@ $db		= "cbt";
 //Menggunakan objek mysqli untuk membuat koneksi dan menyimpanya dalam variabel $mysqli	
 $mysqli = new mysqli($host, $user, $pass, $db);
 
+if ($mysqli -> connect_errno) {
+    echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
+    exit();
+  }
+
 //Membuat variabel yang menyimpan url website dan folder website
 $url_website = "http://localhost/cbt";
 $folder_website = "/cbt";
