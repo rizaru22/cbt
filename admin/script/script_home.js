@@ -19,6 +19,8 @@ function form_data_sekolah(){
          $('#nip_kepsek').val(data.NIP_kepsek);
           $('#proktor').val(data.proktor);
          $('#nip_proktor').val(data.NIP_Proktor);
+         $('#judulUjian').val(data.judulUjian);
+         $('#tahunAjaran').val(data.tahunAjaran);
       },
       error : function(){
          alert("Tidak dapat menampilkan data!");

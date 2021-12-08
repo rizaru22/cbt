@@ -48,7 +48,7 @@ echo '<div class="panel-heading"><h3><b>Daftar Ujian</h3></b></div>';
 		
       echo'<tr>
          <td>'.$no.'</td>
-         <td>'.$r['nama_mapel'].'</td>
+         <td>'.$r['judul'].'</td>
          <td>'.implode($kelas_ujian, ", ").'</td>
          <td>'.$r['jml_soal'].'</td>
         <td>'.$r['waktu'].' menit</td>

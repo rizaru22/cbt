@@ -92,6 +92,7 @@ include "../library/config.php";
                         <td>:</td>
                         <td><?php echo $nip_proktor; ?></td>
                       </tr>
+                   
                     </tbody>
                   </table>
            
@@ -124,6 +125,8 @@ open_form("modal_data_sekolah", "return save_data()");
    create_textbox("NIP Kepala Sekolah", "nip_kepsek", "text", 4, "", "required");
    create_textbox("Proktor", "proktor", "text", 4, "", "required");
    create_textbox("NIP Proktor", "nip_proktor", "text", 4, "", "required");
+   create_textbox("Judul Ujian", "judulUjian", "text", 4, "", "required");
+   create_textbox("Tahun Ajaran", "tahunAjaran", "text", 4, "", "required");
    
 close_form();
 ?>

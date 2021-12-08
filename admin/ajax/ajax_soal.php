@@ -97,7 +97,9 @@ elseif($_GET['action'] == "import"){
    if($extensi != ".xls"){
       echo "File yang di-upload tidak berformat .xls!'";
    }else{
-      $path = "../upload";			
+       $dirpath = realpath(dirname(getcwd()));
+     
+      $path = $dirpath."/upload";			
       move_uploaded_file($_FILES['file']['tmp_name'], "$path/$filename");
 			
       $file = "../upload/$filename";

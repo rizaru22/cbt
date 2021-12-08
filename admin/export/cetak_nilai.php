@@ -63,11 +63,11 @@ while($r = mysqli_fetch_array($query)){
 	$proktor=$r['proktor'];
 	$nip_proktor=$r["NIP_Proktor"];
 }
-$query2=mysqli_query($mysqli,"select nama_mapel,tanggal,(SELECT dayofweek(tanggal)) as hari from ujian WHERE id_ujian='$_GET[ujian]' LIMIT 1");
+$query2=mysqli_query($mysqli,"select judul,tanggal,(SELECT dayofweek(tanggal)) as hari from ujian WHERE id_ujian='$_GET[ujian]' LIMIT 1");
 while($r2 = mysqli_fetch_array($query2)){
 	$tanggal=tgl_indonesia($r2['tanggal']);
 	$hari=hari_indonesia($r2['hari']);
-	$mapel=$r2['nama_mapel'];
+	$mapel=$r2['judul'];
 }
 
 $query4=mysqli_query($mysqli,"select kelas from kelas WHERE id_kelas='$_GET[kelas]' LIMIT 1");
@@ -77,7 +77,7 @@ while($r4 = mysqli_fetch_array($query4)){
 echo '<table>
 	<thead>
 		<tr>
-			<th><img src="../../images/kopNilai2.png" class="img-responsive"></th>
+			<th><img src="../../images/kopNilai2.PNG" class="img-responsive"></th>
 		</tr>
 	</thead>
 	<tbody>

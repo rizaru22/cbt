@@ -12,8 +12,8 @@ function acakToken(){
 		
 	}
 
-	$hashing=hash("sha256",$tokenOK);
-	echo $hashing;
+// 	$hashing=hash("sha256",$tokenOK);
+// 	echo $hashing;
 	return $tokenOK;
 }
 

@@ -4,5 +4,4 @@ RewriteEngine on
 RewriteRule ^$ index.php?content=home [L]
 RewriteRule ^detail$ index.php?content=detail [L]
 
-
 </IfModule>

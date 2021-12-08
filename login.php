@@ -16,7 +16,15 @@ include "library/function_antiinjection.php";
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 	
 <script type="text/javascript" src="assets/jquery/jquery-2.0.2.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1C6HED533Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-1C6HED533Z');
+</script>
 </head>
 <body>
 

@@ -46,11 +46,11 @@
 <body>
 <?php
 include "../../library/config.php";
-$query0 = mysqli_query($mysqli, "SELECT nama_sekolah FROM sekolah LIMIT 1");
+$query0 = mysqli_query($mysqli, "SELECT nama_sekolah,judulUjian,tahunAjaran FROM sekolah LIMIT 1");
   while($r = mysqli_fetch_array($query0)){
   	$sekolah=$r['nama_sekolah'];
-  
-  
+    $judulUjian=$r['judulUjian'];
+    $tahunAjaran=$r['tahunAjaran'];
   }
 $query = mysqli_query($mysqli, "select * from siswa where id_kelas='$_GET[kelas]' ORDER BY nama");
 $s = 1;
@@ -63,7 +63,7 @@ while($r = mysqli_fetch_array($query)){
 				echo '<div>
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h2 class="panel-title"><b>KARTU PESERTA UASBK<br>'.strtoupper($sekolah).'<br>TAHUN AJARAN 2019/2020</b></h2>
+              <h2 class="panel-title"><b>KARTU PESERTA '.strtoupper($judulUjian).'<br>'.strtoupper($sekolah).'<br>TAHUN AJARAN '.$tahunAjaran.'</b></h2>
             </div>
             <div class="panel-body">
                 <div class="row"> 
@@ -90,12 +90,12 @@ while($r = mysqli_fetch_array($query)){
                         <td>:</td>
                         <td><b>'.$password.'</b></td>
                       </tr>
-                      <tr>
-                        <td><div style="width: 2cm; height: 3cm; border: 1px solid #ccc; text-align: center;"><br>Foto 2x3</div></td>
+                    <!--   <tr>
+                         <td><div style="width: 2cm; height: 3cm; border: 1px solid #ccc; text-align: center;"><br>Foto 2x3</div></td>
                         <td>&nbsp;</td>
-                        <td><img src="../../images/jadwal.png"></td>
+                       <td><img src="../../images/jadwal.png"></td>
                     
-                      </tr>
+                      </tr> -->
                       </tbody>
                   </table>
            

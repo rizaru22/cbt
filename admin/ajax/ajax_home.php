@@ -18,7 +18,9 @@ kode_kabupaten='$_POST[kode_kabupaten]',
 kepala_sekolah='$_POST[kepsek]',
 NIP_kepsek='$_POST[nip_kepsek]',
 proktor='$_POST[proktor]',
-NIP_Proktor='$_POST[nip_proktor]'
+NIP_Proktor='$_POST[nip_proktor]',
+judulUjian='$_POST[judulUjian]',
+tahunAjaran='$_POST[tahunAjaran]'
 WHERE npsn='$_POST[id]'";
  mysqli_query($mysqli, $query);
  echo "ok";
