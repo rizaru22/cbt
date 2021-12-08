@@ -15,6 +15,7 @@ if($_GET['action'] == "table_data"){
       $row[] = $r['nama'];
       $row[] = $n['jml_benar'];		
       $row[] = $n['nilai'];
+      $row[] = $n['sisa_waktu'];
       $data[] = $row;
 	  $no++;
    }
