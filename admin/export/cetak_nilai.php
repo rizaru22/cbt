@@ -184,9 +184,9 @@ $query3 = mysqli_query($mysqli, "SELECT * FROM siswa WHERE id_kelas='$_GET[kelas
 						<td>&nbsp;</td>
 					</tr>
 					<tr >
-						<td class="garis"><b>'.strtoupper($proktor).'</b></td>
+						<td class="garis"><b>'.$proktor.'</b></td>
 						<td width="250">&nbsp;</td>
-						<td class="garis"><b>'.strtoupper($nama_kepalasekolah).'</b></td>
+						<td class="garis"><b>'.$nama_kepalasekolah.'</b></td>
 					</tr>
 					<tr >
 						<td>NIP. '.$nip_proktor.'</td>
