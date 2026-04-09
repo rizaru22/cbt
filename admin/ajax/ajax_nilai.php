@@ -13,9 +13,9 @@ if($_GET['action'] == "table_data"){
       $row[] = $no;
       $row[] = $r['nis'];
       $row[] = $r['nama'];
-      $row[] = $n['jml_benar']??0;		
-      $row[] = $n['nilai']??0;
-      $row[] = $n['sisa_waktu']??0;
+      $row[] = isset($n['jml_benar']) ? $n['jml_benar'] : '';		
+      $row[] = isset($n['nilai']) ? $n['nilai'] : '';
+      $row[] = isset($n['sisa_waktu']) ? $n['sisa_waktu'] : '';
       $data[] = $row;
 	  $no++;
    }
