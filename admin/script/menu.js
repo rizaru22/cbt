@@ -10,7 +10,7 @@ function show_soal(ujian){
   
 	$('#isi').load('view/view_soal.php?ujian='+ujian);	
    
- 
+  
  }
  
  //Ketika nama kelas diklik

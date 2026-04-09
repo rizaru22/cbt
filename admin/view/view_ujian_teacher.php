@@ -17,4 +17,4 @@ echo '<hr/><div class="alert alert-info"><ul>
 </ul></div>';
  
 create_table(array("Judul Ujian", "Nama Mapel", "Tanggal", "Jml. Soal", "Bank Soal", "Kelas Ujian"));
-?>
+?> 

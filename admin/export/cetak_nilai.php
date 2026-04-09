@@ -157,7 +157,7 @@ $query3 = mysqli_query($mysqli, "SELECT * FROM siswa WHERE id_kelas='$_GET[kelas
 						<td align="center">'.$no.'</td>
 						<td>&nbsp;'. $r3['nis'].'</td>
 						<td>&nbsp;'. $r3['nama'].'</td>
-						<td align="center">'.($n['jml_benar'] ?? 0)</td>
+						<td align="center">'.($n['jml_benar'] ?? 0).'</td>
 						<td align="center" bgcolor="#cccdce"><b>'.($n['nilai'] ?? 0).'</b></td>
 						<td align="center" bgcolor="#f76a6a"><b>'.($n['sisa_waktu'] ?? 0).'</b></td>
 					</tr>'; $no++;
