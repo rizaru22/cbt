@@ -62,6 +62,8 @@ while($r = mysqli_fetch_array($query)){
 	$nip_kepalasekolah=$r['NIP_kepsek'];
 	$proktor=$r['proktor'];
 	$nip_proktor=$r["NIP_Proktor"];
+	$kabupaten=$r['kabupaten'];
+    $kode_kabupaten=$r['kode_kabupaten'];
 }
 $query2=mysqli_query($mysqli,"select judul,tanggal,(SELECT dayofweek(tanggal)) as hari from ujian WHERE id_ujian='$_GET[ujian]' LIMIT 1");
 while($r2 = mysqli_fetch_array($query2)){
@@ -88,11 +90,11 @@ echo '<table>
 						<tr>
 							<td width="100">Kota/Kabupaten</td>
 							<td>:</td>
-							<td width="290" class="garis">Aceh Tamiang</td>
+							<td width="290" class="garis">'.$kabupaten.'</td>
 							<td>&nbsp;</td>
 							<td width="100">Kode</td>
 							<td>:</td>
-							<td width="190" class="garis">014</td>
+							<td width="190" class="garis">'.$kode_kabupaten.'</td>
 						</tr>
 						<tr>
 							<td width="200">Sekolah</td>
